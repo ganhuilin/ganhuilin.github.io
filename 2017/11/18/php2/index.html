@@ -6,15 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017 | 琳七七</title>
+  <title>php基础 | 琳七七</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="琳七七">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+  <meta name="description" content="##大牛们曾说过”好的代码都是熬出来的…”,码海无边，你得学会自己造船…… #PHP基础知识 ####1、常见的输出语句  echo(): 可以一次输出多个值，多个值之间用逗号分隔。echo是语言结构(language construct)，而并不是真正的函数，因此不能作为表达式的一部分使用。  print(): 函数print()打印一个值（它的参数），如果字符串成功显示则返回true，否则返">
+<meta property="og:type" content="article">
+<meta property="og:title" content="php基础">
+<meta property="og:url" content="http://yoursite.com/2017/11/18/php2/index.html">
 <meta property="og:site_name" content="琳七七">
+<meta property="og:description" content="##大牛们曾说过”好的代码都是熬出来的…”,码海无边，你得学会自己造船…… #PHP基础知识 ####1、常见的输出语句  echo(): 可以一次输出多个值，多个值之间用逗号分隔。echo是语言结构(language construct)，而并不是真正的函数，因此不能作为表达式的一部分使用。  print(): 函数print()打印一个值（它的参数），如果字符串成功显示则返回true，否则返">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/Users/lanou/Desktop/95B630DC1A94F976F686C8D8AC0CF3C7">
+<meta property="og:updated_time" content="2017-11-18T10:26:30.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="琳七七">
+<meta name="twitter:title" content="php基础">
+<meta name="twitter:description" content="##大牛们曾说过”好的代码都是熬出来的…”,码海无边，你得学会自己造船…… #PHP基础知识 ####1、常见的输出语句  echo(): 可以一次输出多个值，多个值之间用逗号分隔。echo是语言结构(language construct)，而并不是真正的函数，因此不能作为表达式的一部分使用。  print(): 函数print()打印一个值（它的参数），如果字符串成功显示则返回true，否则返">
+<meta name="twitter:image" content="http://yoursite.com/Users/lanou/Desktop/95B630DC1A94F976F686C8D8AC0CF3C7">
   
     <link rel="alternative" href="/atom.xml" title="琳七七" type="application/atom+xml">
   
@@ -134,103 +140,261 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-php2" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      php基础
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/18/php2/" class="archive-article-date">
+
+        
+        <a href="/2017/11/18/php2/" class="archive-article-date">
   	<time datetime="2017-11-18T09:08:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/18/php2/">php基础</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/Users/lanou/Desktop/95B630DC1A94F976F686C8D8AC0CF3C7" alt=""></p>
+<p>##大牛们曾说过”好的代码都是熬出来的…”,码海无边，你得学会自己造船……</p>
+<p>#PHP基础知识</p>
+<p>####1、常见的输出语句</p>
+<ul>
+<li><p><strong>echo():</strong> 可以一次输出多个值，多个值之间用逗号分隔。echo是语言结构(language construct)，而并不是真正的函数，因此不能作为表达式的一部分使用。</p>
+</li>
+<li><p><strong>print():</strong> 函数print()打印一个值（它的参数），如果字符串成功显示则返回true，否则返回false。</p>
+</li>
+<li><p><strong>print_r():</strong> 可以把字符串和数字简单地打印出来，而数组则以括起来的键和值得列表形式显示，并以Array开头。但print_r()输出布尔值和NULL的结果没有意义，因为都是打印”\n”。因此用var_dump()函数更适合调试。</p>
+</li>
+<li><p><strong>var_dump():</strong> 判断一个变量的类型与长度,并输出变量的数值,如果变量有值输的是变量的值并回返数据类型。此函数显示关于一个或多个表达式的结构信息，包括表达式的类型与值。数组将递归展开值，通过缩进显示其结构。</p>
+</li>
+</ul>
+<p>###2、PHP字符串的方法及注意点</p>
+<p>就介绍一些我们常用的哈……</p>
+<p>####1、substr方法  </p>
+<p>如果第二个参数是正数，就是表示截取的长度，如果是负数，就表示截取截止下标，从字符串最后面开始 0，-1，-2，</p>
+<ul>
+<li><strong>substr(字符串，开始截取下标，截取长度)</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$string=&quot;abdfdjfkg&quot;;</span><br><span class="line">  echo substr($string,1,3); //bdf</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>substr(字符串，开始截取下标，截取结束下标)</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$string=&quot;abdfdjfkg&quot;;</span><br><span class="line">   echo substr($string,1,-1); //bdfdjk</span><br></pre></td></tr></table></figure>
+<p>####2、strlen() 方法</p>
+<p> 返回字符串的长度   </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$string=&quot;abdfdjfkg&quot;;</span><br><span class="line"> echo strlen($string); //9</span><br></pre></td></tr></table></figure>
+<p>####3、strpos() 方法</p>
+<p>查找字符在字符串中的位置,返回的是查找字符串在字符串中的下标（从0开始）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$string=&quot;abdfdjfkg&quot;;</span><br><span class="line">   echo strpos($string,&quot;k”);//7</span><br></pre></td></tr></table></figure>
+<p>####4、trim()</p>
+<p>去掉两边的空格或者字符串</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">echo &quot;[&quot;.trim($string,&quot; &quot;).&quot;]”;//[fabfcdf]</span><br><span class="line">echo &quot;[&quot;.trim($string,&quot;f&quot;).&quot;]”;//[abfcd]</span><br><span class="line">echo &quot;[&quot;.ltrim($string,&quot;f&quot;).&quot;]”;//[abfcdf]</span><br><span class="line">echo &quot;[&quot;.rtrim($string,&quot;f&quot;).&quot;]”;//[fabfcd]</span><br></pre></td></tr></table></figure>
+<p>####5、explode(“分割符号”,”分割字符串”)</p>
+<p>字符串分割方法，会将字符串根据分隔符去分割成一个数组</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$fields=explode(&quot; &quot;,$val);</span><br></pre></td></tr></table></figure>
+<p>####6、注意点：</p>
+<p>（1）<strong>.</strong>  是PHP里面的字符连接符</p>
+<p>（2）双引号里面变量会被解析，单引号里面变量不会被解析</p>
+<p>（3）<strong>htmlspecialchars($string);</strong> 将字符串进行转义处理,转化为HTML形式，解析字符串，转义字符串，对用户提交的数据进行过滤，防止恶意数据<br>（4）当字符串里面包含了双引号或者单引号时需要转义</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$name=&quot;欢迎\&quot;$name\&quot;来这里”;//欢迎&quot;luxp”来这里</span><br></pre></td></tr></table></figure>
+<p>###3、PHP数组</p>
+<p>主要方法：</p>
+<p>（1）count — 计算数组中的单元数目或对象中的属性个数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$array=array(1,2,3,4);</span><br><span class="line">echo count($array);//4</span><br></pre></td></tr></table></figure>
+<p>（2）in_array — 检查数组中是否存在某个值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if(in_array(&quot;3&quot;,$array))&#123;</span><br><span class="line">echo &quot;在&quot;; //输出值</span><br><span class="line">&#125;</span><br><span class="line">else&#123;</span><br><span class="line">echo &quot;不在&quot;;</span><br></pre></td></tr></table></figure>
+<p> 在 PHP 中，有三种类型的数组：</p>
+<p>数值数组 - 带有数字 ID 键的数组</p>
+<p>关联数组 - 带有指定的键的数组，每个键关联一个值</p>
+<p>多维数组 - 包含一个或多个数组的数组</p>
+<p>创建关联数组的方法</p>
+<p>（1）方法一</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$age=array(&quot;Peter&quot;=&gt;&quot;35&quot;,&quot;Ben&quot;=&gt;&quot;37&quot;,&quot;Joe&quot;=&gt;&quot;43&quot;);</span><br></pre></td></tr></table></figure>
+<p>（2）方法二</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$age[&apos;Peter&apos;]=&quot;35&quot;;</span><br><span class="line">$age[&apos;Ben&apos;]=&quot;37&quot;;</span><br><span class="line">$age[&apos;Joe&apos;]=&quot;43&quot;;</span><br></pre></td></tr></table></figure>
+<p>###4、PHP内置函数 —empty/isset</p>
+<p>（1）empty()—判断一个变量是否存在，如果变量不存在就返回true</p>
+<p>当变量未定义时值为true ，当变量定义了但是值等于 null 0 “0”时，值为true</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$ghl=&quot;0&quot;/null/0;</span><br><span class="line">  if(empty($ghl))&#123;</span><br><span class="line">  echo &quot;变量没有定义&quot;;</span><br><span class="line">  &#125;</span><br><span class="line">  else&#123;</span><br><span class="line">  echo $ghl;</span><br><span class="line">  &#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+<p>(2)isset()  —只要声明了变量且赋值且值不是null就返回true</p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>小仙女谢谢你给的糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/11/18/php2/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/18/php/" class="archive-article-date">
-  	<time datetime="2017-11-18T03:21:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/11/18/php/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">PHP</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/18/php/">PHP</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/13/hello-world/" class="archive-article-date">
-  	<time datetime="2017-11-13T12:21:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-13</time>
-</a>
-        </div>
-    	 
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="php2" data-title="php基础" data-url="http://yoursite.com/2017/11/18/php2/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/13/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
+  <div id="SOHUCS" sid="php2" ></div> 
+<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: "true",
+        conf: "true"
+    });
+</script>
+</script>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -253,8 +417,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
