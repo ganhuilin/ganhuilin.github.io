@@ -6,19 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>php基础 | 琳七七</title>
+  <title>cookie | 琳七七</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="大牛们曾说过”好的代码都是熬出来的…”,码海无边，你得学会自己造船……PHP基础知识1、常见的输出语句 echo(): 可以一次输出多个值，多个值之间用逗号分隔。echo是语言结构(language construct)，而并不是真正的函数，因此不能作为表达式的一部分使用。  print(): 函数print()打印一个值（它的参数），如果字符串成功显示则返回true，否则返回false。  pr">
+  <meta name="description" content="cookie这个神奇的记录员在浏览器中，我们经常会有数据的交互，就像我们现在登QQ，会问你要不要记录密码，那样下次登录的时候就不用输入密码了，因为我们神奇的cookie已经保存了密码数据，Cookie是由HTTP服务器设置的，保存在浏览器中，但HTTP协议是一种无状态协议，在数据交换完毕后，服务器端和客户端的链接就会关闭，每次交换数据都需要建立新的链接。而cookie机制则是在客户端保持状态的方案">
 <meta property="og:type" content="article">
-<meta property="og:title" content="php基础">
-<meta property="og:url" content="http://yoursite.com/2017/11/18/php2/index.html">
+<meta property="og:title" content="cookie">
+<meta property="og:url" content="http://yoursite.com/2017/11/20/cookie/index.html">
 <meta property="og:site_name" content="琳七七">
-<meta property="og:description" content="大牛们曾说过”好的代码都是熬出来的…”,码海无边，你得学会自己造船……PHP基础知识1、常见的输出语句 echo(): 可以一次输出多个值，多个值之间用逗号分隔。echo是语言结构(language construct)，而并不是真正的函数，因此不能作为表达式的一部分使用。  print(): 函数print()打印一个值（它的参数），如果字符串成功显示则返回true，否则返回false。  pr">
+<meta property="og:description" content="cookie这个神奇的记录员在浏览器中，我们经常会有数据的交互，就像我们现在登QQ，会问你要不要记录密码，那样下次登录的时候就不用输入密码了，因为我们神奇的cookie已经保存了密码数据，Cookie是由HTTP服务器设置的，保存在浏览器中，但HTTP协议是一种无状态协议，在数据交换完毕后，服务器端和客户端的链接就会关闭，每次交换数据都需要建立新的链接。而cookie机制则是在客户端保持状态的方案">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-11-18T10:47:21.000Z">
+<meta property="og:image" content="http://yoursite.com/2017/11/20/cookie/1.jpg">
+<meta property="og:updated_time" content="2017-11-20T14:31:57.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="php基础">
-<meta name="twitter:description" content="大牛们曾说过”好的代码都是熬出来的…”,码海无边，你得学会自己造船……PHP基础知识1、常见的输出语句 echo(): 可以一次输出多个值，多个值之间用逗号分隔。echo是语言结构(language construct)，而并不是真正的函数，因此不能作为表达式的一部分使用。  print(): 函数print()打印一个值（它的参数），如果字符串成功显示则返回true，否则返回false。  pr">
+<meta name="twitter:title" content="cookie">
+<meta name="twitter:description" content="cookie这个神奇的记录员在浏览器中，我们经常会有数据的交互，就像我们现在登QQ，会问你要不要记录密码，那样下次登录的时候就不用输入密码了，因为我们神奇的cookie已经保存了密码数据，Cookie是由HTTP服务器设置的，保存在浏览器中，但HTTP协议是一种无状态协议，在数据交换完毕后，服务器端和客户端的链接就会关闭，每次交换数据都需要建立新的链接。而cookie机制则是在客户端保持状态的方案">
+<meta name="twitter:image" content="http://yoursite.com/2017/11/20/cookie/1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="琳七七" type="application/atom+xml">
   
@@ -138,76 +140,41 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-php2" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-cookie" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      php基础
+      cookie
     </h1>
   
 
         
-        <a href="/2017/11/18/php2/" class="archive-article-date">
-  	<time datetime="2017-11-18T09:08:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
+        <a href="/2017/11/20/cookie/" class="archive-article-date">
+  	<time datetime="2017-11-20T12:50:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-20</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="大牛们曾说过”好的代码都是熬出来的…”-码海无边，你得学会自己造船……"><a href="#大牛们曾说过”好的代码都是熬出来的…”-码海无边，你得学会自己造船……" class="headerlink" title="大牛们曾说过”好的代码都是熬出来的…”,码海无边，你得学会自己造船……"></a>大牛们曾说过”好的代码都是熬出来的…”,码海无边，你得学会自己造船……</h2><h1 id="PHP基础知识"><a href="#PHP基础知识" class="headerlink" title="PHP基础知识"></a>PHP基础知识</h1><h4 id="1、常见的输出语句"><a href="#1、常见的输出语句" class="headerlink" title="1、常见的输出语句"></a>1、常见的输出语句</h4><ul>
-<li><p><strong>echo():</strong> 可以一次输出多个值，多个值之间用逗号分隔。echo是语言结构(language construct)，而并不是真正的函数，因此不能作为表达式的一部分使用。</p>
-</li>
-<li><p><strong>print():</strong> 函数print()打印一个值（它的参数），如果字符串成功显示则返回true，否则返回false。</p>
-</li>
-<li><p><strong>print_r():</strong> 可以把字符串和数字简单地打印出来，而数组则以括起来的键和值得列表形式显示，并以Array开头。但print_r()输出布尔值和NULL的结果没有意义，因为都是打印”\n”。因此用var_dump()函数更适合调试。</p>
-</li>
-<li><p><strong>var_dump():</strong> 判断一个变量的类型与长度,并输出变量的数值,如果变量有值输的是变量的值并回返数据类型。此函数显示关于一个或多个表达式的结构信息，包括表达式的类型与值。数组将递归展开值，通过缩进显示其结构。</p>
-</li>
-</ul>
-<h3 id="2、PHP字符串的方法及注意点"><a href="#2、PHP字符串的方法及注意点" class="headerlink" title="2、PHP字符串的方法及注意点"></a>2、PHP字符串的方法及注意点</h3><p>就介绍一些我们常用的哈……</p>
-<h4 id="1、substr方法"><a href="#1、substr方法" class="headerlink" title="1、substr方法"></a>1、substr方法</h4><p>如果第二个参数是正数，就是表示截取的长度，如果是负数，就表示截取截止下标，从字符串最后面开始 0，-1，-2，</p>
-<ul>
-<li><strong>substr(字符串，开始截取下标，截取长度)</strong></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$string=&quot;abdfdjfkg&quot;;</span><br><span class="line">  echo substr($string,1,3); //bdf</span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>substr(字符串，开始截取下标，截取结束下标)</strong></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$string=&quot;abdfdjfkg&quot;;</span><br><span class="line">   echo substr($string,1,-1); //bdfdjk</span><br></pre></td></tr></table></figure>
-<h4 id="2、strlen-方法"><a href="#2、strlen-方法" class="headerlink" title="2、strlen() 方法"></a>2、strlen() 方法</h4><p> 返回字符串的长度   </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$string=&quot;abdfdjfkg&quot;;</span><br><span class="line"> echo strlen($string); //9</span><br></pre></td></tr></table></figure>
-<h4 id="3、strpos-方法"><a href="#3、strpos-方法" class="headerlink" title="3、strpos() 方法"></a>3、strpos() 方法</h4><p>查找字符在字符串中的位置,返回的是查找字符串在字符串中的下标（从0开始）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$string=&quot;abdfdjfkg&quot;;</span><br><span class="line">   echo strpos($string,&quot;k”);//7</span><br></pre></td></tr></table></figure>
-<h4 id="4、trim"><a href="#4、trim" class="headerlink" title="4、trim()"></a>4、trim()</h4><p>去掉两边的空格或者字符串</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">echo &quot;[&quot;.trim($string,&quot; &quot;).&quot;]”;//[fabfcdf]</span><br><span class="line">echo &quot;[&quot;.trim($string,&quot;f&quot;).&quot;]”;//[abfcd]</span><br><span class="line">echo &quot;[&quot;.ltrim($string,&quot;f&quot;).&quot;]”;//[abfcdf]</span><br><span class="line">echo &quot;[&quot;.rtrim($string,&quot;f&quot;).&quot;]”;//[fabfcd]</span><br></pre></td></tr></table></figure>
-<h4 id="5、explode-“分割符号”-”分割字符串”"><a href="#5、explode-“分割符号”-”分割字符串”" class="headerlink" title="5、explode(“分割符号”,”分割字符串”)"></a>5、explode(“分割符号”,”分割字符串”)</h4><p>字符串分割方法，会将字符串根据分隔符去分割成一个数组</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$fields=explode(&quot; &quot;,$val);</span><br></pre></td></tr></table></figure>
-<h4 id="6、注意点："><a href="#6、注意点：" class="headerlink" title="6、注意点："></a>6、注意点：</h4><p>（1）<strong>.</strong>  是PHP里面的字符连接符</p>
-<p>（2）双引号里面变量会被解析，单引号里面变量不会被解析</p>
-<p>（4）当字符串里面包含了双引号或者单引号时需要转义</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$name=&quot;欢迎\&quot;$name\&quot;来这里”;//欢迎&quot;luxp”来这里</span><br></pre></td></tr></table></figure>
-<h3 id="3、PHP数组"><a href="#3、PHP数组" class="headerlink" title="3、PHP数组"></a>3、PHP数组</h3><p>主要方法：</p>
-<p>（1）count — 计算数组中的单元数目或对象中的属性个数</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$array=array(1,2,3,4);</span><br><span class="line">echo count($array);//4</span><br></pre></td></tr></table></figure>
-<p>（2）in_array — 检查数组中是否存在某个值</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if(in_array(&quot;3&quot;,$array))&#123;</span><br><span class="line">echo &quot;在&quot;; //输出值</span><br><span class="line">&#125;</span><br><span class="line">else&#123;</span><br><span class="line">echo &quot;不在&quot;;</span><br></pre></td></tr></table></figure>
-<p> 在 PHP 中，有三种类型的数组：</p>
-<p>数值数组 - 带有数字 ID 键的数组</p>
-<p>关联数组 - 带有指定的键的数组，每个键关联一个值</p>
-<p>多维数组 - 包含一个或多个数组的数组</p>
-<p>创建关联数组的方法</p>
-<p>（1）方法一</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$age=array(&quot;Peter&quot;=&gt;&quot;35&quot;,&quot;Ben&quot;=&gt;&quot;37&quot;,&quot;Joe&quot;=&gt;&quot;43&quot;);</span><br></pre></td></tr></table></figure>
-<p>（2）方法二</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$age[&apos;Peter&apos;]=&quot;35&quot;;</span><br><span class="line">$age[&apos;Ben&apos;]=&quot;37&quot;;</span><br><span class="line">$age[&apos;Joe&apos;]=&quot;43&quot;;</span><br></pre></td></tr></table></figure>
-<h3 id="4、PHP内置函数-—empty-isset"><a href="#4、PHP内置函数-—empty-isset" class="headerlink" title="4、PHP内置函数 —empty/isset"></a>4、PHP内置函数 —empty/isset</h3><p>（1）empty()—判断一个变量是否存在，如果变量不存在就返回true</p>
-<p>当变量未定义时值为true ，当变量定义了但是值等于 null 0 “0”时，值为true</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$ghl=&quot;0&quot;/null/0;</span><br><span class="line">  if(empty($ghl))&#123;</span><br><span class="line">  echo &quot;变量没有定义&quot;;</span><br><span class="line">  &#125;</span><br><span class="line">  else&#123;</span><br><span class="line">  echo $ghl;</span><br><span class="line">  &#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
-<p>(2)isset()  —只要声明了变量且赋值且值不是null就返回true</p>
+        <h2 id="cookie这个神奇的记录员"><a href="#cookie这个神奇的记录员" class="headerlink" title="cookie这个神奇的记录员"></a>cookie这个神奇的记录员</h2><p>在浏览器中，我们经常会有数据的交互，就像我们现在登QQ，会问你要不要记录密码，那样下次登录的时候就不用输入密码了，因为我们神奇的cookie已经保存了密码数据，Cookie是由HTTP服务器设置的，保存在浏览器中，但HTTP协议是一种无状态协议，在数据交换完毕后，服务器端和客户端的链接就会关闭，每次交换数据都需要建立新的链接。而cookie机制则是在客户端保持状态的方案，cookie又叫会话跟踪机制。打开一次浏览器到关闭浏览器算是一次会话。说到这里，讲下HTTP协议，前面提到，HTTP协议是一种无状态协议，在数据交换完毕后，服务器端和客户端的链接就会关闭，每次交换数据都需要建立新的链接。此时，服务器无法从链接上跟踪会话。cookie可以跟踪会话，弥补HTTP无状态协议的不足。</p>
+<h2 id="cookie的分类"><a href="#cookie的分类" class="headerlink" title="cookie的分类"></a>cookie的分类</h2><h4 id="cookie分为会话cookie和持久cookie"><a href="#cookie分为会话cookie和持久cookie" class="headerlink" title="cookie分为会话cookie和持久cookie"></a>cookie分为会话cookie和持久cookie</h4><p>会话cookie就是指没有设置过期时间，不设定cookie的生命周期时，这时的cookie数据会在浏览会话结束时</p>
+<p>持久cookie就是在设置cookie的时候给它设定了生命周期expires,cookie数据会在截止日期销毁</p>
+<h2 id="关于cookie，你该知道这些…"><a href="#关于cookie，你该知道这些…" class="headerlink" title="关于cookie，你该知道这些….."></a>关于cookie，你该知道这些…..</h2><p>1、cookie是存贮在浏览器的一小段数据,可以同时被前后台操作，无需链接，cookie可以跨页面存取</p>
+<p>2、cookie是有生命期的，默认是浏览器的进程，如果浏览器进程退出，cookie才结束</p>
+<p>3、cookie处理值，其余的属性都是只写</p>
+<p>4、expires  设定cookie的生命期，他的值是一个字符串要把过期日期转化为字符串toGMTSstring()</p>
+<p>5、    cookie并不能无限制的储存，有限制的：数量，浏览器下面的cookie数量不能超过300个，每个服务器不超过20个，所有cookie包含他们属性的大小不超过4k</p>
+<h2 id="了解了这么多，接下来，咱来学一波…"><a href="#了解了这么多，接下来，咱来学一波…" class="headerlink" title="了解了这么多，接下来，咱来学一波….."></a>了解了这么多，接下来，咱来学一波…..</h2><h4 id="1、设置cookie数据"><a href="#1、设置cookie数据" class="headerlink" title="1、设置cookie数据"></a>1、设置cookie数据</h4><h4 id="前台设置cookie数据，并且设置它的生命周期为一天"><a href="#前台设置cookie数据，并且设置它的生命周期为一天" class="headerlink" title="前台设置cookie数据，并且设置它的生命周期为一天"></a>前台设置cookie数据，并且设置它的生命周期为一天</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var current_date=new Date();	</span><br><span class="line">//getDate()得到当前日期在每个月的第几天，setData将日期转化为Tue Nov 21 2017 21:29:01 GMT+0800 (CST)格式</span><br><span class="line">current_date.setDate(current_date.getDate()+1);</span><br><span class="line">//就像前面说的toGMTString()将日期转化为 Tue, 21 Nov 2017 13:29:01 GMT格式</span><br><span class="line">expires_str=current_date.toGMTString();</span><br><span class="line">document.cookie=&quot;user=ghl;expires=&quot;+expires_str;</span><br></pre></td></tr></table></figure>
+<h4 id="后台设置cookie数据"><a href="#后台设置cookie数据" class="headerlink" title="后台设置cookie数据"></a>后台设置cookie数据</h4><h4 id="cookie的几种常见属性："><a href="#cookie的几种常见属性：" class="headerlink" title="cookie的几种常见属性："></a>cookie的几种常见属性：</h4><h4 id="document-cookie-”key-value-expires-失效时间-path-路径-domain-域名-secure-secure表安全级别-”"><a href="#document-cookie-”key-value-expires-失效时间-path-路径-domain-域名-secure-secure表安全级别-”" class="headerlink" title="document.cookie=”key=value;expires=失效时间;path=路径;domain=域名;secure;(secure表安全级别)”"></a>document.cookie=”key=value;expires=失效时间;path=路径;domain=域名;secure;(secure表安全级别)”</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//设置一个有生命期的cookie</span><br><span class="line">//第三个参数就是过期时间，比如一天后失效   就是24*3600（单位是秒）</span><br><span class="line">//time() 函数返回自 Unix 纪元（January 1 1970 00:00:00 GMT）起的当前时间的秒数。</span><br><span class="line">setcookie(&quot;newMember&quot;,&quot;ghl&quot;,time()+24*3600);</span><br></pre></td></tr></table></figure>
+<h4 id="如何从所有的数据中取出特定的数据"><a href="#如何从所有的数据中取出特定的数据" class="headerlink" title="如何从所有的数据中取出特定的数据"></a>如何从所有的数据中取出特定的数据</h4><p>cookie数据的特点，以键值对形式存储，；分割每个cookie数据 —“num=1; user=ghl”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">str=document.cookie;</span><br><span class="line">//值开始位置,indexOf() 方法可返回某个指定的字符串值在字符串中首次出现的位置,+5就是去=号后面的那一位</span><br><span class="line">start=str.indexOf(&quot;user=&quot;)+5;</span><br><span class="line">//直结束的位置</span><br><span class="line">end=str.indexOf(&quot;;&quot;,start);</span><br><span class="line">//如果cookie数据是最后一个，那么end找不到&quot;;&quot;,它的值就等于cookie的字符串的长度，找到最后一位</span><br><span class="line">end=end==-1?str.length:end;</span><br><span class="line">val2=str.substring(start,end);</span><br><span class="line">console.log(val2);  //ghl</span><br></pre></td></tr></table></figure>
+<h4 id="cookie可以设置path"><a href="#cookie可以设置path" class="headerlink" title="cookie可以设置path"></a>cookie可以设置path</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//path=/addme/getcookie表示只在getcookie目录下生效，包含子目录</span><br><span class="line">document.cookie=&quot;user2=scc;path=/;&quot;;</span><br></pre></td></tr></table></figure>
+<p>时间不早了，明天继续整理一波…..</p>
+<p><img src="1.jpg" alt=""></p>
 
       
 
@@ -287,7 +254,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/11/18/php2/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/11/20/cookie/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -301,18 +268,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/11/20/cookie/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          cookie
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/11/18/php/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">PHP</div>
+    <a href="/2017/11/18/php2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">php基础</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -339,7 +297,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#大牛们曾说过”好的代码都是熬出来的…”-码海无边，你得学会自己造船……"><span class="toc-number">1.</span> <span class="toc-text">大牛们曾说过”好的代码都是熬出来的…”,码海无边，你得学会自己造船……</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP基础知识"><span class="toc-number"></span> <span class="toc-text">PHP基础知识</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1、常见的输出语句"><span class="toc-number">0.0.1.</span> <span class="toc-text">1、常见的输出语句</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、PHP字符串的方法及注意点"><span class="toc-number">0.1.</span> <span class="toc-text">2、PHP字符串的方法及注意点</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1、substr方法"><span class="toc-number">0.1.1.</span> <span class="toc-text">1、substr方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2、strlen-方法"><span class="toc-number">0.1.2.</span> <span class="toc-text">2、strlen() 方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3、strpos-方法"><span class="toc-number">0.1.3.</span> <span class="toc-text">3、strpos() 方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4、trim"><span class="toc-number">0.1.4.</span> <span class="toc-text">4、trim()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5、explode-“分割符号”-”分割字符串”"><span class="toc-number">0.1.5.</span> <span class="toc-text">5、explode(“分割符号”,”分割字符串”)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6、注意点："><span class="toc-number">0.1.6.</span> <span class="toc-text">6、注意点：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、PHP数组"><span class="toc-number">0.2.</span> <span class="toc-text">3、PHP数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、PHP内置函数-—empty-isset"><span class="toc-number">0.3.</span> <span class="toc-text">4、PHP内置函数 —empty/isset</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#cookie这个神奇的记录员"><span class="toc-number">1.</span> <span class="toc-text">cookie这个神奇的记录员</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cookie的分类"><span class="toc-number">2.</span> <span class="toc-text">cookie的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#cookie分为会话cookie和持久cookie"><span class="toc-number">2.0.1.</span> <span class="toc-text">cookie分为会话cookie和持久cookie</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于cookie，你该知道这些…"><span class="toc-number">3.</span> <span class="toc-text">关于cookie，你该知道这些…..</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#了解了这么多，接下来，咱来学一波…"><span class="toc-number">4.</span> <span class="toc-text">了解了这么多，接下来，咱来学一波…..</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1、设置cookie数据"><span class="toc-number">4.0.1.</span> <span class="toc-text">1、设置cookie数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#前台设置cookie数据，并且设置它的生命周期为一天"><span class="toc-number">4.0.2.</span> <span class="toc-text">前台设置cookie数据，并且设置它的生命周期为一天</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#后台设置cookie数据"><span class="toc-number">4.0.3.</span> <span class="toc-text">后台设置cookie数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#cookie的几种常见属性："><span class="toc-number">4.0.4.</span> <span class="toc-text">cookie的几种常见属性：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#document-cookie-”key-value-expires-失效时间-path-路径-domain-域名-secure-secure表安全级别-”"><span class="toc-number">4.0.5.</span> <span class="toc-text">document.cookie=”key=value;expires=失效时间;path=路径;domain=域名;secure;(secure表安全级别)”</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#如何从所有的数据中取出特定的数据"><span class="toc-number">4.0.6.</span> <span class="toc-text">如何从所有的数据中取出特定的数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#cookie可以设置path"><span class="toc-number">4.0.7.</span> <span class="toc-text">cookie可以设置path</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -353,7 +311,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="php2" data-title="php基础" data-url="http://yoursite.com/2017/11/18/php2/"></div>
+	<div class="ds-thread" data-thread-key="cookie" data-title="cookie" data-url="http://yoursite.com/2017/11/20/cookie/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -375,7 +333,7 @@
   
 
   
-  <div id="SOHUCS" sid="php2" ></div> 
+  <div id="SOHUCS" sid="cookie" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
