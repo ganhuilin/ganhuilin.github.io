@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017 | 琳七七</title>
+  <title>php前后台交互 | 琳七七</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="琳七七">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+  <meta name="description" content="php实现前后台交互在我看来，学习了这么久的PHP，我对它的理解就是它就是一个红娘，替前后台传情书的那种，哈哈哈哈，接下来，写一个实例看看它是这么当红娘的我们来实现一个点菜的功能，菜名和价格什么的数据都存储在后台，我们利用ajax去发送请求将后台的菜单数据请求回来，然后在前台进行点菜，再将顾客点的菜和对应的份数传回后台，后台在接受这些数据进行处理返回前台显示第一步，我们发送请求去请求后台的菜单数据">
+<meta property="og:type" content="article">
+<meta property="og:title" content="php前后台交互">
+<meta property="og:url" content="http://yoursite.com/2017/11/21/php前后台交互/index.html">
 <meta property="og:site_name" content="琳七七">
+<meta property="og:description" content="php实现前后台交互在我看来，学习了这么久的PHP，我对它的理解就是它就是一个红娘，替前后台传情书的那种，哈哈哈哈，接下来，写一个实例看看它是这么当红娘的我们来实现一个点菜的功能，菜名和价格什么的数据都存储在后台，我们利用ajax去发送请求将后台的菜单数据请求回来，然后在前台进行点菜，再将顾客点的菜和对应的份数传回后台，后台在接受这些数据进行处理返回前台显示第一步，我们发送请求去请求后台的菜单数据">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-11-21T15:04:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="琳七七">
+<meta name="twitter:title" content="php前后台交互">
+<meta name="twitter:description" content="php实现前后台交互在我看来，学习了这么久的PHP，我对它的理解就是它就是一个红娘，替前后台传情书的那种，哈哈哈哈，接下来，写一个实例看看它是这么当红娘的我们来实现一个点菜的功能，菜名和价格什么的数据都存储在后台，我们利用ajax去发送请求将后台的菜单数据请求回来，然后在前台进行点菜，再将顾客点的菜和对应的份数传回后台，后台在接受这些数据进行处理返回前台显示第一步，我们发送请求去请求后台的菜单数据">
   
     <link rel="alternative" href="/atom.xml" title="琳七七" type="application/atom+xml">
   
@@ -134,157 +138,200 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-php前后台交互" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      php前后台交互
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/21/php前后台交互/" class="archive-article-date">
+
+        
+        <a href="/2017/11/21/php前后台交互/" class="archive-article-date">
   	<time datetime="2017-11-21T14:46:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-21</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/21/php前后台交互/">php前后台交互</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="php实现前后台交互"><a href="#php实现前后台交互" class="headerlink" title="php实现前后台交互"></a>php实现前后台交互</h3><h4 id="在我看来，学习了这么久的PHP，我对它的理解就是它就是一个红娘，替前后台传情书的那种，哈哈哈哈，接下来，写一个实例看看它是这么当红娘的"><a href="#在我看来，学习了这么久的PHP，我对它的理解就是它就是一个红娘，替前后台传情书的那种，哈哈哈哈，接下来，写一个实例看看它是这么当红娘的" class="headerlink" title="在我看来，学习了这么久的PHP，我对它的理解就是它就是一个红娘，替前后台传情书的那种，哈哈哈哈，接下来，写一个实例看看它是这么当红娘的"></a>在我看来，学习了这么久的PHP，我对它的理解就是它就是一个红娘，替前后台传情书的那种，哈哈哈哈，接下来，写一个实例看看它是这么当红娘的</h4><h4 id="我们来实现一个点菜的功能，菜名和价格什么的数据都存储在后台，我们利用ajax去发送请求将后台的菜单数据请求回来，然后在前台进行点菜，再将顾客点的菜和对应的份数传回后台，后台在接受这些数据进行处理返回前台显示"><a href="#我们来实现一个点菜的功能，菜名和价格什么的数据都存储在后台，我们利用ajax去发送请求将后台的菜单数据请求回来，然后在前台进行点菜，再将顾客点的菜和对应的份数传回后台，后台在接受这些数据进行处理返回前台显示" class="headerlink" title="我们来实现一个点菜的功能，菜名和价格什么的数据都存储在后台，我们利用ajax去发送请求将后台的菜单数据请求回来，然后在前台进行点菜，再将顾客点的菜和对应的份数传回后台，后台在接受这些数据进行处理返回前台显示"></a>我们来实现一个点菜的功能，菜名和价格什么的数据都存储在后台，我们利用ajax去发送请求将后台的菜单数据请求回来，然后在前台进行点菜，再将顾客点的菜和对应的份数传回后台，后台在接受这些数据进行处理返回前台显示</h4><h4 id="第一步，我们发送请求去请求后台的菜单数据"><a href="#第一步，我们发送请求去请求后台的菜单数据" class="headerlink" title="第一步，我们发送请求去请求后台的菜单数据"></a>第一步，我们发送请求去请求后台的菜单数据</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">var btn=document.getElementById(&apos;btn&apos;);</span><br><span class="line">	 	var showdata=document.getElementById(&apos;showdata&apos;);	</span><br><span class="line">     	//创建一个xhr对象去请求后台</span><br><span class="line">     	var xhr=new XMLHttpRequest();</span><br><span class="line">     	//打开要请求的后台，并用get方式去传送action</span><br><span class="line">     	xhr.open(&quot;get&quot;,&quot;menu.php?action=1&quot;,true);</span><br><span class="line">     	//get方式的send方法是null</span><br><span class="line">     	xhr.send(null);</span><br><span class="line">     	//前台接收到后台数据之后对数据进行操作</span><br><span class="line">     	xhr.onload=function()&#123;</span><br><span class="line">     		//将后台数据转化为json对象格式</span><br><span class="line">     		var jsonstr=JSON.parse(this.responseText);</span><br><span class="line">     		//遍历jsonstr对象</span><br><span class="line">     		for(i in jsonstr)&#123;</span><br><span class="line">     		var div=document.createElement(&apos;div&apos;);</span><br><span class="line">     		div.innerHTML=&quot;&lt;input type=\&quot;checkbox\&quot; class=\&quot;checkbox\&quot; name=\&quot;key[]\&quot; value=\&quot;&quot; +jsonstr[i].key+&quot;\&quot;/&gt;&quot;+&quot; &quot;+jsonstr[i].name+&quot; 价格:&quot;+jsonstr[i].price+&quot; 订餐份数:&lt;input type=\&quot;text\&quot; class=\&quot;numshow\&quot; name=\&quot;amount_&quot;+jsonstr[i].key+&quot;\&quot; /&gt;&quot;;</span><br><span class="line">     		document.getElementById(&apos;menu&apos;).appendChild(div);</span><br><span class="line">     	&#125;</span><br><span class="line">     	&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="当我们请求号菜单就可以点菜了-这里要记得菜的值和份数要转化为字符串，用join-去转化"><a href="#当我们请求号菜单就可以点菜了-这里要记得菜的值和份数要转化为字符串，用join-去转化" class="headerlink" title="当我们请求号菜单就可以点菜了,这里要记得菜的值和份数要转化为字符串，用join()去转化"></a>当我们请求号菜单就可以点菜了,这里要记得菜的值和份数要转化为字符串，用join()去转化</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">btn.onclick=function()&#123;</span><br><span class="line">     		var checks=document.getElementsByClassName(&quot;checkbox&quot;);</span><br><span class="line">     		var numshow=document.getElementsByClassName(&apos;numshow&apos;);</span><br><span class="line">     		var record=[];</span><br><span class="line">     		var menuNum=[];</span><br><span class="line">     		for(var i=0;i&lt;checks.length;i++)&#123;</span><br><span class="line">				if(checks[i].checked)&#123;</span><br><span class="line">					record.push(i);</span><br><span class="line">				&#125;	</span><br><span class="line">     		&#125;</span><br><span class="line">     		for(var j=0;j&lt;record.length;j++)&#123;</span><br><span class="line">     			menuNum.push(numshow[record[j]].value);</span><br><span class="line">     		&#125;</span><br><span class="line">     		</span><br><span class="line">			var str=record.join();</span><br><span class="line">			var strnum=menuNum.join();</span><br><span class="line">			var formdata=new FormData();</span><br><span class="line">			formdata.append(&quot;num&quot;,str);</span><br><span class="line">			formdata.append(&quot;number&quot;,strnum);</span><br><span class="line">			var xhr2=new XMLHttpRequest();</span><br><span class="line">			xhr2.open(&quot;post&quot;,&quot;menu.php&quot;);</span><br><span class="line">			xhr2.send(formdata);</span><br><span class="line">			xhr2.onload=function()&#123;</span><br><span class="line">				var jsonstr2=JSON.parse(this.responseText);</span><br><span class="line">				console.log(jsonstr2);</span><br><span class="line">				var zong=0;</span><br><span class="line">				for(i in jsonstr2)&#123;</span><br><span class="line">					var allprice=1;</span><br><span class="line">					var show=document.createElement(&apos;div&apos;);</span><br><span class="line">					show.innerHTML=&quot;已订菜:&quot;+jsonstr2[i][0].name+&quot;  价格:&quot;+jsonstr2[i][0].price+&quot; 份数:&quot;+jsonstr2[i][1];</span><br><span class="line">					allprice*=(jsonstr2[i][0].price*jsonstr2[i][1]);</span><br><span class="line">					zong+=allprice;</span><br><span class="line">					showdata.appendChild(show);</span><br><span class="line">				&#125;</span><br><span class="line">				var  price=document.createElement(&apos;div&apos;);</span><br><span class="line">				price.innerHTML=&quot;总价:&quot;+zong+&quot;元&quot;;</span><br><span class="line">				showdata.appendChild(price);</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">			</span><br><span class="line">     	&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="后台接受数据-这里我自己给自己挖了一个神坑，因为点菜的时候点1份后台就是没数据传回来……我找了好久，终于，找到了，那是因为没加上判断前台的数据是0，就是在你点1份菜的时候，就是if的那个判断，哎……"><a href="#后台接受数据-这里我自己给自己挖了一个神坑，因为点菜的时候点1份后台就是没数据传回来……我找了好久，终于，找到了，那是因为没加上判断前台的数据是0，就是在你点1份菜的时候，就是if的那个判断，哎……" class="headerlink" title="后台接受数据,这里我自己给自己挖了一个神坑，因为点菜的时候点1份后台就是没数据传回来……我找了好久，终于，找到了，那是因为没加上判断前台的数据是0，就是在你点1份菜的时候，就是if的那个判断，哎……."></a>后台接受数据,这里我自己给自己挖了一个神坑，因为点菜的时候点1份后台就是没数据传回来……我找了好久，终于，找到了，那是因为没加上判断前台的数据是0，就是在你点1份菜的时候，就是if的那个判断，哎…….</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$menu = array();</span><br><span class="line">$menu[] = array(&quot;name&quot;=&gt;&quot;红烧肉&quot;,&quot;price&quot;=&gt;&quot;10&quot;,&quot;key&quot;=&gt;&quot;0&quot;);</span><br><span class="line">$menu[] = array(&quot;name&quot;=&gt;&quot;烤鸡&quot;,&quot;price&quot;=&gt;&quot;20&quot;,&quot;key&quot;=&gt;&quot;1&quot;);</span><br><span class="line">$menu[] = array(&quot;name&quot;=&gt;&quot;鲍鱼&quot;,&quot;price&quot;=&gt;&quot;30&quot;,&quot;key&quot;=&gt;&quot;2&quot;);</span><br><span class="line">$menu[] = array(&quot;name&quot;=&gt;&quot;青菜汤&quot;,&quot;price&quot;=&gt;&quot;4&quot;,&quot;key&quot;=&gt;&quot;4&quot;);</span><br><span class="line"> if(!empty($_GET[&apos;action&apos;]))&#123;</span><br><span class="line"> 	echo json_encode($menu);</span><br><span class="line"> &#125;</span><br><span class="line">   if(!empty($_POST[&apos;num&apos;])||$_POST[&apos;num&apos;]==0)&#123;</span><br><span class="line">   	$show=explode(&quot;,&quot;,$_POST[&apos;num&apos;]);</span><br><span class="line">   	$fennum=explode(&quot;,&quot;,$_POST[&apos;number&apos;]);</span><br><span class="line">   	$line=array([]);</span><br><span class="line">   	foreach($show as $key=&gt;$val)&#123;</span><br><span class="line">   		$line[$val][0]=$menu[$val];</span><br><span class="line">   		$line[$val][1]=$fennum[$val];</span><br><span class="line">   		&#125;</span><br><span class="line">   	</span><br><span class="line">   	echo json_encode($line,true);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+      
 
-        <div class="article-info info-on-right">
-          
-          
-
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>小仙女谢谢你给的糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/11/21/php前后台交互/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/20/cookie/" class="archive-article-date">
-  	<time datetime="2017-11-20T12:50:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-20</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/11/20/cookie/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">cookie</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/20/cookie/">cookie</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#php实现前后台交互"><span class="toc-number">1.</span> <span class="toc-text">php实现前后台交互</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#在我看来，学习了这么久的PHP，我对它的理解就是它就是一个红娘，替前后台传情书的那种，哈哈哈哈，接下来，写一个实例看看它是这么当红娘的"><span class="toc-number">1.1.</span> <span class="toc-text">在我看来，学习了这么久的PHP，我对它的理解就是它就是一个红娘，替前后台传情书的那种，哈哈哈哈，接下来，写一个实例看看它是这么当红娘的</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#我们来实现一个点菜的功能，菜名和价格什么的数据都存储在后台，我们利用ajax去发送请求将后台的菜单数据请求回来，然后在前台进行点菜，再将顾客点的菜和对应的份数传回后台，后台在接受这些数据进行处理返回前台显示"><span class="toc-number">1.2.</span> <span class="toc-text">我们来实现一个点菜的功能，菜名和价格什么的数据都存储在后台，我们利用ajax去发送请求将后台的菜单数据请求回来，然后在前台进行点菜，再将顾客点的菜和对应的份数传回后台，后台在接受这些数据进行处理返回前台显示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第一步，我们发送请求去请求后台的菜单数据"><span class="toc-number">1.3.</span> <span class="toc-text">第一步，我们发送请求去请求后台的菜单数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#当我们请求号菜单就可以点菜了-这里要记得菜的值和份数要转化为字符串，用join-去转化"><span class="toc-number">1.4.</span> <span class="toc-text">当我们请求号菜单就可以点菜了,这里要记得菜的值和份数要转化为字符串，用join()去转化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#后台接受数据-这里我自己给自己挖了一个神坑，因为点菜的时候点1份后台就是没数据传回来……我找了好久，终于，找到了，那是因为没加上判断前台的数据是0，就是在你点1份菜的时候，就是if的那个判断，哎……"><span class="toc-number">1.5.</span> <span class="toc-text">后台接受数据,这里我自己给自己挖了一个神坑，因为点菜的时候点1份后台就是没数据传回来……我找了好久，终于，找到了，那是因为没加上判断前台的数据是0，就是在你点1份菜的时候，就是if的那个判断，哎…….</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/18/php2/" class="archive-article-date">
-  	<time datetime="2017-11-18T09:08:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
-</a>
-        </div>
-    	 
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="php前后台交互" data-title="php前后台交互" data-url="http://yoursite.com/2017/11/21/php前后台交互/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/18/php2/">php基础</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/18/php/" class="archive-article-date">
-  	<time datetime="2017-11-18T03:21:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/18/php/">PHP</a>
-    </h1>
+  <div id="SOHUCS" sid="php前后台交互" ></div> 
+<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: "true",
+        conf: "true"
+    });
+</script>
+</script>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/13/hello-world/" class="archive-article-date">
-  	<time datetime="2017-11-13T12:21:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/13/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -307,8 +354,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
